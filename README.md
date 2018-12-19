@@ -70,7 +70,7 @@ The function will be available for Number and Character data types, It usually w
 
 ## Contributing
 
-Please read [CONTRIBUTING.md] for details on our code of conduct, and the process for submitting pull requests to me.
+Please read [CONTRIBUTING.md]([CONTRIBUTING.md]) for details on our code of conduct, and the process for submitting pull requests to me.
 
 ## Versioning
 
