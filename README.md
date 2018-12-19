@@ -63,6 +63,7 @@ The function will be available for Number and Character data types, It usually w
 ### Examples
 
 Below you can find some examples, with the input CPNJ and how the function will mask it:
+
 | Original CNPJ        | Masked CNPJ        | Obs                                                    |
 | -------------------- |--------------------| -------------------------------------------------------|
 | 85186183000134       | 27625621111610     | Masked value without Mask                              |
