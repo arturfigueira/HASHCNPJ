@@ -60,6 +60,18 @@ Modify the provided the *custom_config.xml* and add the xml below inside the `<f
 The function will be available for Number and Character data types, It usually will be placed at the end of available functions with the name `HASHCNPJ`.
 
 
+### Examples
+
+Below you can find some examples, with the input CPNJ and how the function will mask it:
+| Original CNPJ        | Masked CNPJ        | Obs                                                    |
+| -------------------- |--------------------| -------------------------------------------------------|
+| 85186183000134       | 27625621111610     | Masked value without Mask                              |
+| 85.186.183/0001-34   | 27.625.621/1116-10 | Same input from above, with mask, same output with mask|
+| 97.948.854/0001-36   | 21.212.271/1116-83 | The funcation can Hash CNPJ with it's mask             |
+| *Null*               | *Null*             | Masking function will maintain Null values             |
+| `Empty`              | `Empty`            | Masking function will maintain Empty values            |
+
+
 ## Built With
 
 * [Java](https://www.oracle.com/technetwork/java/index.html) - Main language used to create this function.
