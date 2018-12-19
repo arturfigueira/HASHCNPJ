@@ -38,16 +38,6 @@ public class HashCNPJ implements IMaskFunction {
         final String hashedCnpj = randfunctions.formatHash(cnpjWithoutDV);
         final String cleanedHashedCNPJ = cleanUp(hashedCnpj);
         return hashedCnpj+ CNPJCheckDigitCalculator.calculate(cleanedHashedCNPJ);
-
- /*       final String cleanedCNPJ = originalCNPJ.replaceAll("\\D", "");
-
-        if(!CNPJValidator.isValid(cleanedCNPJ)){
-            throw new IllegalArgumentException("This CNPJ is invalid and cant be hashed");
-        }
-
-        final String cnpjWithoutDV = cleanedCNPJ.substring(0, cleanedCNPJ.length() - 2);
-        final String hashedCnpj = randfunctions.formatHash(cnpjWithoutDV);
-        return hashedCnpj+ CNPJCheckDigitCalculator.calculate(hashedCnpj);*/
     }
 
     private String cleanUp(final String cnpj){
