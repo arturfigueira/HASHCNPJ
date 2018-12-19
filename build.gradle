@@ -20,7 +20,7 @@ dependencies {
 jar {
     manifest {
         attributes(
-                'Built-By'       : "CA Technologies - LATAM Services",
+                'Built-By'       : "Artur Figueira",
                 'Build-Timestamp': new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ").format(new Date()),
                 'Created-By'     : "Gradle ${gradle.gradleVersion}",
                 'Build-Jdk'      : "${System.properties['java.version']} (${System.properties['java.vendor']} ${System.properties['java.vm.version']})"
